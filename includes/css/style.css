@@ -1,0 +1,157 @@
+.business-color {
+    color: #c32605 !important;
+}
+
+.home-card {
+    max-width: 700px;
+    color: #000000 !important;
+}
+
+.business-bg {
+    background-color: #c32605;
+}
+
+.bg-custom
+{
+    background-color: #ffffff;
+}
+
+.main-content {
+    min-height: 800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    border-top: #c32605 solid 10px;
+}
+
+
+/* Dark background */
+.business-cl > a:link, .business-cl > a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.business-cl >  a:active {
+    color: #c32605;
+    text-decoration: none;
+}
+
+.business-cl > a:hover {
+    color: #c32605;
+    text-decoration: none;
+}
+
+/* Light Background */
+.business-cl-alt > a:link, .business-cl-alt > a:visited {
+    color: #c32605;
+    text-decoration: none;
+}
+
+.business-cl-alt >  a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.business-cl-alt > a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Links around site */
+.site a:link,.site a:visited {
+    color: #c32605;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* Links that are buttons */
+a.btn-secondary:link, a.btn-secondary:visited {
+    color: #ffffff;
+}
+
+a.btn-secondary:active {
+    color: #ffffff;
+}
+
+a.btn-secondary:hover {
+    color: #ffffff;
+}
+
+
+a.btn-post {
+    background-color: lightgrey;
+    color: white;
+
+}
+
+a.btn-post-view-all
+{
+    background-color: #c32605;
+    color: white;
+}
+
+
+/* Button links */
+a.btn {
+    color: #ffffff !important;
+}
+
+
+
+/* Navbar */
+.navbar {
+    border-bottom: #c32605 solid 10px;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li.active a {
+    color: #000000 !important;
+}
+
+.btn-contact
+{
+    color: #ffffff !important;
+    background-color: #c32605;
+}
+
+/* Top Button */
+#top_button {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    height: 60px;
+    width: 60px;
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, 0.4); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+}
+
+#top_button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Set a background color */
+}
+
+
+.card-no-border
+{
+    border: 0 solid white;
+}
+
