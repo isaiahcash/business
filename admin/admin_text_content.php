@@ -38,7 +38,7 @@ admin_start_content();
                     <div class="modal-header">
                         <h5 class="modal-title">Edit</h5>
                         <button type="button" class="close" data-dismiss="modal">
-                            <i class="fas fa-times"></i>
+                            <i class="fa fa-times"></i>
                         </button>
                     </div>
                     <div class="modal-body">

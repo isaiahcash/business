@@ -93,9 +93,9 @@ $images = $query -> fetchAll();
                     print "<a class='btn btn-post w-100 my-2 d-none d-md-inline-flex d-xl-none' href='/business/posts/posts_single.php?id=" . $post['id'] . "'>" . $link_text . "</a>";
                 }
 
-                print "<a class='btn btn-post-view-all w-100 my-2 d-none d-xl-inline-flex' href='/business/posts.php'>View All</a>";
-                print "<a class='btn btn-post-view-all w-100 my-2 d-md-none' href='/business/posts.php'>View All</a>";
-                print "<a class='btn btn-post-view-all w-100 my-2 d-none d-md-inline-flex d-xl-none' href='/business/posts.php'>View All</a>";
+                print "<a class='btn btn-post-view-all w-100 my-2 d-none d-xl-inline-flex' href='/business/posts.php'>View All Posts</a>";
+                print "<a class='btn btn-post-view-all w-100 my-2 d-md-none' href='/business/posts.php'>View All Posts</a>";
+                print "<a class='btn btn-post-view-all w-100 my-2 d-none d-md-inline-flex d-xl-none' href='/business/posts.php'>View All Posts</a>";
 
                 ?>
                 <br>

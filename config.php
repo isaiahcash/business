@@ -8,3 +8,5 @@ error_reporting(0);
 require_once('includes/functions.php');
 require_once('includes/mysql.php');
 require_once('includes/credentials.php');
+
+require_once('includes/navigate_home.php');

@@ -69,7 +69,7 @@ start_content();
                         <label for="comments">Comments</label>
                         <textarea class="form-control" id="comments" name="comments" rows="5"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default disabled" disabled>Submit</button>
                 </form>
             </div>
         </div>

@@ -39,7 +39,7 @@ if(isset($_REQUEST)) {
             $body .= "Request Type: " . $rt . "<br>";
             $body .= "Comments: " . $com . "<br>";
 
-            send_mail($subject, $body);
+//            send_mail($subject, $body);
 
             header("location: " . $loc . "?err=0");
             die;
@@ -50,24 +50,3 @@ if(isset($_REQUEST)) {
 header("location: " . $loc . "?err=1");
 die;
 
-
-function send_mail($subject, $msg)
-{
-    $sql = "SELECT setting_value FROM admin_settings WHERE setting_name = 'form_email'";
-    $query = DB::query($sql);
-    $result = $query -> fetch(PDO::FETCH_ASSOC);
-    $to = $result['setting_value'];
-
-    $headers = "";
-    $headers .= "Reply-To: Cron Job <isaiahcash.web@gmail.com>\r\n";
-    $headers .= "Return-Path: Cron Job <isaiahcash.web@gmail.com>\r\n";
-    $headers .= "From: Cron Job <isaiahcash.web@gmail.com>\r\n";
-
-    $headers .= "Organization: isaiahcash.com\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    $headers .= "X-Priority: 3\r\n";
-    $headers .= "X-Mailer: PHP". phpversion() ."\r\n";
-
-    $check = mail($to, $subject, $msg, $headers);
-}
