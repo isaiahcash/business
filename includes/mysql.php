@@ -55,5 +55,9 @@ class DB
         self::$db=null;
     }
 
+    static function lastInsertId()
+    {
+        return self::get_DB()->lastInsertId();
+    }
 }
 

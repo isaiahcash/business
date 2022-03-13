@@ -449,8 +449,7 @@ function image_update($type, $data)
     $message = ""; // holds messages
     $upload_flag = 0; // if upload continues through code successful
     $upload_new = 0; // if file was selected to upload
-    $target_dir = "/var/www/html/business/images/" . $type . "/";
-
+    $target_dir = "/var/www/html/isaiahcash/business/images/" . $type . "/";
 
     // if file is being uploaded
     if((isset($_FILES['edit_new_image']) && $_FILES['edit_new_image']['size'] > 0)) {
@@ -464,7 +463,7 @@ function image_update($type, $data)
         //get the file type of the current image
         $image_file_type = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-        // check if image file is a actual image or fake image
+        // check if image file is an actual image or fake image
         if (isset($_POST["submit"])) {
             $check = getimagesize($_FILES["edit_new_image"]["tmp_name"]);
             if ($check !== false) {
@@ -487,6 +486,7 @@ function image_update($type, $data)
         }
         // if everything is ok, try to upload file
         if ($upload_flag == 1) {
+
             if (move_uploaded_file($_FILES["edit_new_image"]["tmp_name"], $target_file)) {
 
                 // get the old file and remove it
@@ -547,7 +547,8 @@ function image_create($type, $id, $data)
     $tmp = array(); // array within data array
     $message = ""; // holds messages
     $upload_flag = 0; // if upload continues through code successful
-    $target_dir = "/var/www/html/business/images/" . $type . "/";
+    $upload_new = 0; // if file was selected to upload
+    $target_dir = "/var/www/html/isaiahcash/business/images/" . $type . "/";
 
 
     // if file is being uploaded
@@ -562,7 +563,7 @@ function image_create($type, $id, $data)
         //get the file type of the current image
         $image_file_type = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-        // check if image file is a actual image or fake image
+        // check if image file is an actual image or fake image
         if (isset($_POST["submit"])) {
             $check = getimagesize($_FILES["create_new_image"]["tmp_name"]);
             if ($check !== false) {
@@ -616,7 +617,7 @@ function image_create($type, $id, $data)
     }
 
     // set an alert for success/fail of upload
-    if(/*$upload_new == 1 */1)
+    if($upload_new == 1)
     {
         if($upload_flag == 1) $tmp[] = true;
         else $tmp[] = false;
