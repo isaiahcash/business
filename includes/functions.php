@@ -20,9 +20,8 @@ function start_page()
         <link rel="stylesheet" href="/business/includes/css/style.css">
     </head>
     <body>
-
     <?php
-    navigate_home();
+    navigate_home("https://isaiahcash.com/homes/projects.php", true);
 }
 
 function script_includes()
@@ -307,7 +306,7 @@ function print_content($field)
 function check_user()
 {
     if(!$_SESSION['admin']) {
-        header("Location: ../login.php");
+        header("Location: ../sign_in.php");
     }
 
 }
