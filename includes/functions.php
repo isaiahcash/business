@@ -21,7 +21,7 @@ function start_page()
     </head>
     <body>
     <?php
-    navigate_home("https://isaiahcash.com/homes/projects.php", true);
+    navigate_home("https://isaiahcash.com/home/projects.php", true);
 }
 
 function script_includes()
