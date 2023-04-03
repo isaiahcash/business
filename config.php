@@ -9,4 +9,4 @@ require_once('includes/functions.php');
 require_once('includes/mysql.php');
 require_once('includes/credentials.php');
 
-require_once('../shared/navigate_home.php');
+require_once('/var/www/html/isaiahcash/shared/navigate_home.php');
